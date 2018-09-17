@@ -49,7 +49,8 @@ OPT_DEFS += -DINTERRUPT_CONTROL_ENDPOINT
 OPT_DEFS += -DBOOTLOADER_SIZE=4096
 
 # Mass storage bootloader on the tada68 uses bin files
-FIRMWARE_FORMAT=bin
+# Updated this back to hex since we've modded our tada to use the qmk bootloader
+FIRMWARE_FORMAT=hex
 
 # Build Options
 #   comment out to disable the options.
